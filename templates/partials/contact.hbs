@@ -1,0 +1,129 @@
+<div class="container-fluid mt-5 contact-style" id="contactid">
+  <div class="row">
+    <div class="col-mid-10 col-12 mx-auto">
+      <h1 class="text-center main-heading">User Details</h1>
+      <p class="text-center sub-heading">we will be happy to help you</p>
+      <div class="row">
+        <div class="col-md-6 col-12 mx-auto">
+
+          <form action="javascript:sendmail()" method="POST" onclick="sendEmail()">
+            
+            <div class="form-group">
+              <label for="examplwInputPassword1">Name</label>
+              <input type="text" class="form-control" id="Name" placeholder="Full Name" name="name">
+            </div>
+
+            <div class="form-group">
+              <label for="exampleInputPassword1">Email</label>
+              <input type="email" class="form-control" id="Sender" aria-describedby="emailHelp" placeholder="Enter your email" name="email">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+
+            <div class="form-group">
+              <label for="exampleInputPassword">Phone</label>
+              <input type="number" class="form-control" id="Phone" placeholder="Phone Number" name="phone">
+            </div>
+
+            <div class="from-group">
+              <label for="exampleInputPassword">Message</label>
+              <input type="text" class="form-control" id="Message" placeholder="Message" name="message">
+            </div>
+
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Accept</label>
+            </div>
+
+            <!--<input type="button" value="sendEmail" onclick="sendEmail()">-->
+            <button type="submit" class="btn btn-primary" onclick="sendmail()">Submit</button>
+          </form>
+
+
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+<script type="text/javascript">
+  function sendmail(){
+    
+			var name = $('#Name').val();
+			var email = $('#Sender').val();
+			var phone = $('#Phone').val();
+      var message = $('#Message').val();
+
+			// var body = $('#body').val();
+
+			var Body='Name: '+name+'<br>Sender: '+email+'<br>Phone: '+phone+'<br>Message: '+message;
+			//console.log(name, phone, email, message);
+
+			Email.send({
+        SecureToken:"fbf31702-bb7f-4a4e-9c1c-4ccf17ee777f",
+				To: 'mirrafathali100@gmail.com',
+        Username: 'Rafath Ali',
+        password: 'anfjanfjacaf',
+				From: "mirrafathali100@gmail.com",
+				Subject: "New message on contact from "+name,
+				Body: Body
+			}).then(
+				message =>{
+					//console.log (message);
+					if(message=='OK'){
+					alert('Your mail has been send. Thank you for connecting.');
+					}
+					else{
+						console.error (message);
+						alert('There is error at sending message. ')
+						
+					}
+
+				}
+			);
+		}
+</script>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          {{!-- <script type="text/javascript">
+    function sendEmail(){
+         
+  {{!-- Email.send({
+      Host : "smtp.gmail.com",
+      Username : "baseerahmedrazvi@gmail.com",
+      Password : "kniibnjbiadratvr",
+      To : 'baseerahmedrazvi@gmail.com',
+      From : "baseerahmedrazvi@gmail.com",
+      Subject : "Confirmation",
+      Body : "Booking is confirmed"
+  }).then(
+  /* message => alert(message)*/
+  );
+}
+  </script> --}} 
+        
+ 
