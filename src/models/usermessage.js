@@ -5,14 +5,14 @@ const userSchema=mongoose.Schema({
     name:{
         type: String,
         required: true,
-        minLength: 3
+        minLength: 2
     },
     email:{
         type: String,
         required: true,
         validate(value){
             if(!validator.isEmail(value)){
-                throw new Error("Invalid email-id")
+                throw new Error("ISorry, Invalid email-id")
             }
         }
     },
@@ -25,7 +25,7 @@ const userSchema=mongoose.Schema({
     message:{
         type: String,
         required: true,
-        minLength: 3
+        minLength: 5
     },
 })
 
