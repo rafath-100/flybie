@@ -1,0 +1,403 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-image: url("images/background.jpg");
+    background-size: 100vw 100vh;
+}
+
+/* H O M E */
+header{
+    color: white;
+}
+
+h2{
+    margin-left: 20px;
+    font-size: 50px;
+    color: gray;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+h2:hover {
+    color: yellowgreen;
+    cursor: pointer;
+} */
+
+nav {
+    display: flex;
+    flex-direction: row;
+    padding: 20px 40px;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+    position: absolute;
+}
+
+img{
+    height: 80px;
+    width: 80px;
+    border-radius: 30px;
+    justify-content: left;
+    margin-left: 35px;
+    margin-top: 10px;
+    position: relative;
+    margin-left: 20px;
+    margin-right: auto;
+
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+    flex-wrap: wrap;
+}
+
+li{
+    list-style: none;
+    /* border: 2px solid yellowgreen; */
+    padding: 18px 23px;
+    margin: 0 12px;
+    font-size: 24px;
+    margin-top: 0px;
+    
+}
+li:hover{
+    background-color: yellowgreen;
+    color: gray;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+a{
+    text-decoration: none;
+    color:  gray;
+}
+
+.introduction{
+    color: gray;
+    /* border: 3px solid yellowgreen; */
+    border-radius: 5px;
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: auto;
+    text-align: center;
+    line-height: 25px;
+    width:75%;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    font-size: 25px;
+}
+
+.introduction h3:hover{
+    color: yellowgreen;
+}
+footer{
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding: 15px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    background-color: #353434;
+    position: fixed;
+    bottom:0;
+    opacity: 0.8;
+}
+
+#name {
+    color: yellowgreen;
+    font-size: 40px;
+    font-weight: bolder;
+    
+}
+
+.introduction > span {
+    font-size: 25px;
+    font-style: italic;
+    margin-top: 20px;
+}
+
+span{
+    font-size: 20px;
+    margin-bottom: 22px;
+}
+
+#btn{
+    padding: 10px 30px;
+    margin: 10px 10px;
+    border: 2px solid yellowgreen;
+    color: gray;
+    background-color: transparent;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+#btn:hover {
+    background-color: yellowgreen;
+    color: black;
+    cursor: pointer;
+}
+
+
+/* A B O U T */
+#about {
+    margin-top: 30px;
+    text-align: center;
+    color: yellowgreen;
+}
+
+.about-me {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 50px;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 150px;
+}
+
+.about-me img {
+    width: 400px;
+    height: 400px;
+    margin-left: 190px;
+    margin-top: 20px;
+}
+
+.details {
+    color: gray;
+    margin: 20px;
+    width: 50vw;
+    padding: 15px;
+    font-size: 35px;
+    /* border: 2px solid aquamarine; */
+    text-align: justify;
+}
+
+strong {
+    color: yellowgreen;
+}
+
+/* G A L L E R Y */
+
+#gallery-head {
+    margin-top: 30px;
+    text-align: center;
+    color: yellowgreen;
+}
+
+img {
+    /* width: 40vh;
+    height: 250px;
+    margin: 20px;
+    border: 2px solid gray;
+    border-radius: 5px; */
+    width: 72px;
+    height: 80px;
+}
+
+img:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    position: relative;
+    margin-bottom: 150px;
+}
+
+.gallery img{
+    width: 40vh;
+    height: 250px;
+    margin: 20px;
+    border: 2px solid gray;
+    border-radius: 5px;
+}
+
+/*C O N T A C T*/
+form {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 150px;
+}
+
+input {
+    margin: 20px;
+    padding: 20px 10px;
+    width: 30vw;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 2px solid gray;
+}
+
+textarea {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 30vw;
+    height: 100px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 2px solid gray;
+}
+
+#submit {
+    margin-top: 20px;
+    width: 15vw;
+    background-color: transparent;
+    color: black;
+    border: 2px solid gray;
+    border-radius: 5px;
+}
+
+#submit:hover {
+    background-color: gray;
+    color: black;
+}
+
+#contact {
+    margin-top: 30px;
+    text-align: center;
+    color: yellowgreen;
+}
+
+/* R E S P O N S I V E N E S S */
+@media only screen and (max-width: 1026px){
+    input, textarea {
+        width: 50vw;
+    }
+    #submit {
+        width: 30vw;
+    }
+}
+
+@media only screen and (max-width: 960px){
+    .details {
+        text-align:center;
+        margin-bottom: 50px;
+        width: 70vw;
+    }
+    input, textarea {
+        width: 70vw;
+    }
+}
+
+@media only screen and (max-width: 680px){
+    nav {
+        flex-direction: column;
+    }
+    h2 {
+        margin-bottom: 10px;
+    }
+    .intro {
+        margin-top: 60px;
+    }
+    .details{
+        width: 80vw;
+    }
+    .about-me {
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (max-width: 575px){
+    nav {
+        flex-wrap: nowrap;
+    }
+    ul{
+        justify-content: center;
+        align-content: space-around;
+    }
+    li {
+        padding: 15px 10px;
+        margin: 5px 5px;
+    }
+    .intro {
+        margin-top: 40px;
+    }
+    .details{
+        width: 90vw;
+    }
+    .about-me img {
+        width: 80vw;
+    }
+    input, textarea {
+        width: 90vw;
+    }
+    #submit {
+        width: 50vw;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+}
+
+@media only screen and (max-width: 430px){
+    .intro{
+        width: 90vw;
+    }
+    .about-me img {
+        height: 300px;
+    }
+}
+
+@media only screen and (max-width: 415px){
+    li {
+        padding: 10px 5px;
+        margin: 5px 2px;
+    }
+}
+
+@media only screen and (max-width: 350px){
+    li {
+        padding: 10px 3px;
+        margin: 4px 0px;
+    }
+    img {
+        width: 90vw;
+    }
+    footer {
+        padding-bottom: 12px;
+    }
+    #contact {
+        font-size: 25px;
+    }
+
+}
+
+@media only screen and (max-width: 318px){
+    li {
+        padding: 8px 2px;
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 300px){
+    li {
+        padding: 6px 1px;
+        font-size: 14px;
+    }
+    #submit {
+        font-size: 16px;
+    }
+    #gallery-head {
+        font-size: 25px;
+    }
+}
